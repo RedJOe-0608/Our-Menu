@@ -122,6 +122,7 @@ align-items: center;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.5rem;
     row-gap: 2rem;
+    margin-bottom: 3rem;
 }
 .menu-item{
     display: grid;
@@ -172,4 +173,16 @@ align-items: center;
     text-align: left;
     margin-bottom: 0;
 
+}
+
+@media  screen and (max-width: 1100px) {
+    .menu-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .tags{
+        display: flex;
+        max-width: 40rem;
+    }
+    
 }
