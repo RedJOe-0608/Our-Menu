@@ -6,6 +6,9 @@ html {
 *{
     box-sizing: border-box;
 }
+html,body{
+    overflow-x: hidden;
+}
 
 :root{
     --bg-color: #d9d4e7;
@@ -101,6 +104,12 @@ align-items: center;
     margin-bottom: 0.3rem;
 }
 
+.tags{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 
 .tag{
         width: 7rem;
@@ -175,7 +184,7 @@ align-items: center;
 
 }
 
-@media  screen and (max-width: 1100px) {
+@media  screen and (max-width: 1300px) {
     .menu-grid{
         display: flex;
         flex-direction: column;
@@ -185,4 +194,19 @@ align-items: center;
         max-width: 40rem;
     }
     
+}
+
+@media screen and (max-width: 700px){
+    .menu-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .image-container{
+        margin: 0 auto;
+        width: 26rem;
+        height: 16.5rem;
+    }
+    .section-center{
+        width: 60vw;
+    }
 }
